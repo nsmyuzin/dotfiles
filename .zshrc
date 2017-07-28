@@ -50,19 +50,6 @@ precmd () {
   echo -ne "\e]1;${PWD:t}\a"
 }
 
-## Prezto 有効 無効
-# Prezto update方法　git pull && git submodule update --init --recursive
-
-
-##oh-my-zsh有・(無) Path to your oh-my-zsh installation.
-#export ZSH=/Users/nishizawashunpei/.oh-my-zsh
-#plugins=(git ruby osx bundler brew rails emoji-clock vagrant)
-#source $ZSH/oh-my-zsh.sh
-###テーマ設定
-#ZSH_THEME="amuse"
-###自動アップデート有効
-#export DISABLE_AUTO_UPDATE="true"
-
 #postgrespl設定
 export PGDATA=/usr/local/var/postgres
 
@@ -81,3 +68,7 @@ done
 export PATH=/usr/local/bin:$PATH
 
 #ruby setup
+
+
+#neovim設定
+export XDG_CONFIG_HOME=$HOME/.config
