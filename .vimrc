@@ -25,6 +25,7 @@ if dein#load_state(s:dein_dir)
   " call dein#add('Shougo/unite.vim') "ファイル操作
   call dein#add('nathanaelkane/vim-indent-guides') "インデント可視化
   call dein#add('Townk/vim-autoclose') "カッコを自動で閉じる
+  call dein#add('scrooloose/nerdtree') "ツリー表示可能に
   call dein#end()
   call dein#save_state()
 endif
@@ -275,3 +276,5 @@ if has("autocmd")
   augroup END
 endif
 
+" vim実行時にツリーが表示されるようにする
+autocmd VimEnter * execute 'NERDTree'
