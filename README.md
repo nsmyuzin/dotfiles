@@ -1,1 +1,4 @@
-# zshとvimのドットファイル
+# zshとvimのドットファイルを置く
+
+ホームディレクトのdotfiles内にclone
+create_syb_link.shを実行

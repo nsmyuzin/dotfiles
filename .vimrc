@@ -276,5 +276,22 @@ if has("autocmd")
   augroup END
 endif
 
+" s引当なしにする
+nnoremap s <Nop>
+" tab作成
+nnoremap st :<C-u>tabnew<CR>
+" tab移動
+nnoremap sn gt
+nnoremap sp gT
+" 画面分割
+nnoremap ss :<C-u>sp<CR>
+nnoremap sv :<C-u>vs<CR>
+" 画面移動
+nnoremap sj <C-w>j
+nnoremap sk <C-w>k
+nnoremap sl <C-w>l
+nnoremap sh <C-w>h
+
+
 " vim実行時にツリーが表示されるようにする
 autocmd VimEnter * execute 'NERDTree'
